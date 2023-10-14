@@ -1,0 +1,38 @@
+.social_media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.social_media p {
+  color: var(--gray-400, #98a2b3);
+
+  /* Text md/Regular */
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem; /* 150% */
+}
+
+.social_links {
+  display: flex;
+  gap: 1.6rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .social_media p {
+    font-size: 1.4rem;
+  }
+
+  .social_links img {
+    width: 2rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .social_media {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

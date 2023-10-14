@@ -1,0 +1,16 @@
+.section_content {
+  max-width: 116rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+  margin-bottom: 6rem;
+  padding-inline: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .section_content {
+    flex-direction: column;
+  }
+}
