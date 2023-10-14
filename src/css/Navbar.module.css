@@ -50,6 +50,16 @@
   cursor: pointer;
 }
 
+.products_cheveron {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cheveron {
+  margin-top: 0.5rem;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 1024px) {

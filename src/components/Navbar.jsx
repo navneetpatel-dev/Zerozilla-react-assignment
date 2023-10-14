@@ -7,6 +7,7 @@ import Button from "./ReusableComponents/Button";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleNavbarOpenAndClose } from "../redux/slices/navbarSlice";
+import Cheveron from "./ReusableComponents/Cheveron";
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -49,10 +50,13 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">Products</Link>
+                <Link to="/products" className={classes.products_cheveron}>
+                  Products
+                  <Cheveron />
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Pricing</Link>
+                <Link to="/pricing">Pricing</Link>
               </li>
               <li>
                 <Link to="/blogs">Blogs</Link>
